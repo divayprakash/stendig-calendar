@@ -48,7 +48,7 @@ for (let i = 0; i < 7; i++) {                                           // weeks
 }
 html += '</tbody></table>';
 document.getElementById('calendar').innerHTML = html;
-document.title = days[(today.getDay() + 1) % 7];
+document.title = days[(today.getDay() + 6) % 7];
 window.addEventListener('load', (event) => {
     document.body.classList.add('ready');
 });
